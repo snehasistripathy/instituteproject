@@ -1,0 +1,115 @@
+{%load static%}
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {%include 'cndlines.html'%}
+</head>
+<style>
+
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-3 col-md-6">
+                <form method="POST">
+                    {% csrf_token%}
+                    <label>User id</label>
+                    <input type="text" name="user" class="form  -control">
+                    <label >Password</label>
+                    <input type="password" name="password" class="form-control">
+                    <input type="submit" value="Login" class="btn btn-outline-danger">
+                    <input type="reset" value="cancel" class="btn btn-outline-success">
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {%include 'cndlines.html'%}
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+    body{
+        background-size: cover;
+    }
+   
+    .login-form{
+        width: 350px;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        color: #fff;
+    }
+    .login-form h1{
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 40px;
+    }
+    .login-form p{
+        font-size: 20px;
+        margin: 15px 0;
+    }
+    .login-form input{
+        font-size: 16px;
+        width: 100%;
+        padding: 15px 10px;
+        border: 0;
+        outline: none;
+        border-radius: 5px;
+    }
+</style>
+<body background="../static/images/login.jpg">
+    <div class="login-form">
+        <h1>login form</h1>
+        <form action="#" method="POST">
+            {% csrf_token %}
+            <p>User Name</p>
+            <input type="text" name="user">
+            <p>Password</p>
+            <input type="password" name="password" >
+            <div>
+            <button type="submit" value="Login" class="btn btn-primary mt-2">login</button>
+            <button type="reset" value="cancel" class="btn btn-info mt-2">cancel</button>
+            </div>
+            <div  class="text-center">
+            <a href="{% url 'register' %}" class="btn btn-outline-success btn-lg mt-2">Register Here</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

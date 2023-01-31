@@ -1,0 +1,48 @@
+{% extends 'base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <h1 class="text-center">All avilable courses</h1>
+    {% if courses %}
+    <table class="text-center table table-bordered">
+        <thead class="bg-success text-white">
+            <tr>
+                <th>courses name</th>
+                <th>duresion</th>
+                <th>start date</th>
+                <th>fee</th>
+                <th>timeing</th>
+                <th>trainer name</th>
+                <th>trainer exp</th>
+            </tr>
+        </thead>
+        <tbody class="bg-primary text-white">
+            {% for i in courses %}
+           <tr class="bg-dark text-white">
+                <td>{{i.courses_name}}</td>
+                <td>{{i.duresion}}</td>
+                <td>{{i.start_date}}</td>
+                <td>{{i.fee}}</td>
+                <td>{{i.timeing}}</td>
+                <td>{{i.trainer_name}}</td>
+                <td>{{i.trainer_exp}}</td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {% else %}
+    <h1>No Course Avilable</h1>
+    {% endif %}
+    {% endblock%}
+    
+</body>
+</html>

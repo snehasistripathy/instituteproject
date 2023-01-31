@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% include 'cndlines.html'%}
+</head>
+<body>
+    <h1 style="background-color: aqua; color: white; text-align: center;">Register Here</h1>
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-3 col-md-6">
+                <form method="POST">
+                    {% csrf_token %}
+                    Enter Your First Name : {{form.first_name}} <br/>
+                    Enter Your Last Name : {{form.last_name}} <br/>
+                    Enter Your Email.Id : &ensp;&ensp; {{form.email}} <br/>
+                    Enter Your User Name : {{form.username}} <br/>
+                    Enter Your password : &ensp;&ensp;{{form.password}} <br/>
+                    
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear">
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+{% extends 'base.html'%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    {% block content %}
+    <div class="container text-center" >
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card box1" style="width: 18rem;height: 300px;">
+            <h3>About Institute</h3>
+            <img class="card-img-top" src="{% static 'images/pune1.jpg' %}"
+              alt="Card image cap" style="height:50%; width: 90%; padding-left: 30px;">
+            <div class="card-body">
+              <p class="card-text">Narayana Tech House Online Training
+                Institute.Contact UsFind TableMake </p>
+            </div>
+          </div>
+        </div>
+        <div class="card box1" style="width: 18rem; margin-left: 100px; height:
+          300px;">
+          <h3>Goals</h3>
+          <img class="card-img-top" src="{% static 'images/hyd1.jpg' %}"
+            alt="Card image cap" style="height:50%; width: 90%; padding-left: 30px;">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card
+              title and make up the bulk of the card's </p>
+          </div>
+        </div>
+        <div class="card box1" style="width: 18rem; margin-left: 100px; height:
+          300px;">
+          <h3>Achievments</h3>
+          <img class="card-img-top" src="{% static 'images/che3.jpg' %}"
+            alt="Card image cap" style="height:50%; width: 90%; padding-left: 30px;">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card
+              title and make up the bulk of the card's </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box2" style="margin: 20px; box-shadow: 0px 0px 10px red; border-radius: 15px; background-color:aqua ;">
+       <h3 class="text-center">About Founder</h3>
+      <div style="display: flex;">
+         <div>
+          <img class="card-img-top " src="{% static 'images/che3.jpg' %}"
+            alt="Card image cap" style="height:170px; width: 300px; margin-bottom: 5px; margin-left: 3px; border-radius: 50%">
+        </div>
+        <div style="margin-left:10px; margin-right: 70px; ">
+          <p>The biggest difference
+            between a founder and a CEO is whether the role i
+            passive. Even when a founding individual leaves the company and is
+            no
+            longer serving an active role,
+            they can still be considered a founder due to their work
+            establishing
+            the company. Additionally,
+            much of the work for founders occurs at the beginning stages of the
+            business.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="dk">
+      <section>
+        <div class="row">
+          <h1>Our Team</h1>
+        </div>
+        <div class="row" style=" display: flex;  flex-wrap: wrap; padding: 2em 1em;  text-align: center;">
+          <div class="column">
+            <div class="car">
+              <div class="img-container">
+                <img src="{% static 'images/che3.jpg' %}">
+              </div>
+              <h3>Sonu sahu</h3>
+              <p>Python Full Stack Devloper</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="car">
+              <div class="img-container">
+                <img src="{% static 'images/che3.jpg' %}">
+              </div>
+              <h3>Snehasis tripathy</h3>
+              <p>Python Full Stack Devloper</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="car">
+              <div class="img-container">
+                <img src="{% static 'images/che3.jpg' %}">
+              </div>
+              <h3>Manas ranjan</h3>
+              <p>Python Full Stack Devloper</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+      {% endblock%}
+    </body>
+  </html>

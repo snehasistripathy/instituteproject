@@ -1,0 +1,79 @@
+{% extends 'base.html'%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        {% block content %}
+        <h1 class="text-center">wel come to gallery page</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{% static 'images/pune1.jpg' %}" alt=""
+                        style="height:100%; width: 100%;">
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static 'images/pune2.jpg' %}" alt=""
+                        style="height:100%; width: 100%;">
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static 'images/pune3.jpg' %}" alt=""
+                        style="height:100%; width: 100%;">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mt-2">
+                        <img src="{% static 'images/bang1.jpg' %}" alt=""
+                            style="height:80%; width: 100%;">
+                    </div>
+                    <div class="col-md-4 mt-2">
+                        <img src="{% static 'images/bang2.jpg' %}" alt=""
+                            style="height:80%; width: 100%;">
+                    </div>
+                    <div class="col-md-4 mt-2">
+                        <img src="{% static 'images/bang3.jpg' %}" alt=""
+                            style="height:80%; width: 100%;">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="{% static 'images/che1.jpg' %}" alt=""
+                                style="height:80%; width: 100%;">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="{% static 'images/che2.jpg' %}" alt=""
+                                style="height:80%; width: 100%;">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="{% static 'images/che3.jpg' %}" alt=""
+                                style="height:80%; width: 100%;">
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 ">
+                                <img src="{% static 'images/hyd1.jpg' %}" alt=""
+                                    style="height:80%; width: 100%;">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="{% static 'images/hyd2.jpg' %}" alt=""
+                                    style="height:80%; width: 100%;">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="{% static 'images/hyd3.jpg' %}" alt=""
+                                    style="height:80%; width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+
+                    {% endblock %}
+
+                </body>
+            </html>
